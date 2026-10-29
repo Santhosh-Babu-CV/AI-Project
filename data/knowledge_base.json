@@ -1,0 +1,148 @@
+{
+  "kb_name": "Hybrid Healthcare Safety Knowledge Base",
+  "version": "1.0.0",
+  "scope": "Educational symptom triage and explanation only",
+  "conditions": [
+    {
+      "id": "common_cold_pattern",
+      "label": "Common-cold-like respiratory pattern",
+      "supporting_symptoms": [
+        "runny_nose",
+        "sneezing",
+        "sore_throat",
+        "cough",
+        "mild_fatigue"
+      ],
+      "contraindicating_red_flags": [
+        "severe_shortness_of_breath",
+        "chest_pain",
+        "confusion",
+        "fainting"
+      ],
+      "explanation": "A combination of runny nose, sneezing, sore throat and cough can occur with common respiratory infections.",
+      "source": "https://www.nhs.uk/conditions/common-cold/"
+    },
+    {
+      "id": "influenza_like_pattern",
+      "label": "Influenza-like illness pattern",
+      "supporting_symptoms": [
+        "fever",
+        "cough",
+        "fatigue",
+        "body_aches",
+        "headache",
+        "sore_throat"
+      ],
+      "contraindicating_red_flags": [
+        "severe_shortness_of_breath",
+        "chest_pain",
+        "confusion",
+        "fainting"
+      ],
+      "explanation": "Fever, cough, fatigue, aches and headache can occur with influenza-like respiratory illness.",
+      "source": "https://www.cdc.gov/flu/signs-symptoms/index.html"
+    },
+    {
+      "id": "migraine_like_pattern",
+      "label": "Migraine-like headache pattern",
+      "supporting_symptoms": [
+        "headache",
+        "nausea",
+        "light_sensitivity"
+      ],
+      "contraindicating_red_flags": [
+        "sudden_severe_headache",
+        "confusion",
+        "fainting",
+        "one_sided_weakness"
+      ],
+      "explanation": "Headache with nausea and light sensitivity can occur in migraine, but sudden or unusual severe headache needs urgent assessment.",
+      "source": "https://www.nhs.uk/conditions/migraine/"
+    },
+    {
+      "id": "gastrointestinal_infection_pattern",
+      "label": "Gastrointestinal infection pattern",
+      "supporting_symptoms": [
+        "diarrhea",
+        "vomiting",
+        "abdominal_pain",
+        "fever"
+      ],
+      "contraindicating_red_flags": [
+        "fainting",
+        "confusion",
+        "severe_dehydration_signs"
+      ],
+      "explanation": "Vomiting and diarrhea can occur with gastrointestinal infections; dehydration is an important safety consideration.",
+      "source": "https://medlineplus.gov/dehydration.html"
+    },
+    {
+      "id": "urinary_infection_pattern",
+      "label": "Urinary-infection-like pattern",
+      "supporting_symptoms": [
+        "burning_urination",
+        "frequent_urination",
+        "lower_abdominal_pain"
+      ],
+      "contraindicating_red_flags": [
+        "fainting",
+        "confusion"
+      ],
+      "explanation": "Burning and frequent urination can occur with urinary tract infection, but symptoms alone cannot confirm a diagnosis.",
+      "source": "https://www.nhs.uk/conditions/urinary-tract-infections-utis/"
+    },
+    {
+      "id": "allergic_rhinitis_pattern",
+      "label": "Allergic-rhinitis-like pattern",
+      "supporting_symptoms": [
+        "sneezing",
+        "runny_nose",
+        "itchy_eyes"
+      ],
+      "contraindicating_red_flags": [
+        "severe_shortness_of_breath",
+        "fainting"
+      ],
+      "explanation": "Sneezing, runny nose and itchy/watery eyes can occur with allergic rhinitis.",
+      "source": "https://www.nhs.uk/conditions/allergic-rhinitis/"
+    }
+  ],
+  "red_flags": [
+    {
+      "id": "chest_pain",
+      "severity": "EMERGENCY",
+      "message": "Sudden or persistent chest pain can require emergency assessment, especially with breathlessness, sweating, nausea or pain spreading to the arm, neck, jaw, back or stomach.",
+      "source": "https://www.nhs.uk/symptoms/chest-pain/"
+    },
+    {
+      "id": "severe_shortness_of_breath",
+      "severity": "EMERGENCY",
+      "message": "Severe difficulty breathing, gasping, choking or being unable to speak normally because of breathlessness requires emergency medical help.",
+      "source": "https://www.nhs.uk/symptoms/shortness-of-breath/"
+    },
+    {
+      "id": "stroke_signs",
+      "severity": "EMERGENCY",
+      "message": "Sudden facial weakness, arm weakness, speech difficulty, sudden vision/balance problems or a sudden severe unexplained headache can be stroke warning signs and require emergency help.",
+      "source": "https://www.cdc.gov/stroke/signs-symptoms/"
+    },
+    {
+      "id": "confusion_or_fainting",
+      "severity": "EMERGENCY",
+      "message": "New confusion, loss of consciousness or fainting can be a medical emergency and needs urgent assessment.",
+      "source": "https://medlineplus.gov/dehydration.html"
+    },
+    {
+      "id": "severe_dehydration_signs",
+      "severity": "URGENT",
+      "message": "Very low/no urination, confusion, fainting, rapid heartbeat or rapid breathing can occur with severe dehydration and require prompt medical assessment.",
+      "source": "https://medlineplus.gov/dehydration.html"
+    }
+  ],
+  "allowed_claim_templates": [
+    "This pattern is compatible with",
+    "This symptom combination can occur with",
+    "The rule engine found support for",
+    "The knowledge base lists"
+  ]
+}
